@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app>
+<head>
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div data-ng-controller="ATController">
+        <div id="addingstuff">
+            <input type="text" ng-model="name" placeholder="Insert Character Here"/><br />
+            <select ng-model="kingdom">
+                <option value="Candy Kingdom">Candy Kingdom</option>
+                <option value="Fire Kingdom">Fire Kingdom</option>
+                <option value="Ice Kingdom">Ice Kingdom</option>
+                <option value="Lumpy Space">Lumpy Space</option>
+            </select>
+            <button id="add" data-ng-click="addCharacter(name, kingdom)">Add Character</button>
+        </div>
+        <div id="LandofOoo">
+            <div id="CandyKingdom">
+                <table>
+                    <tr data-ng-repeat="(key, character) in ckcitizen">
+                        <td>{{character.name}}</td>
+                        <td>{{character.kingdom}}</td>
+                        <td ng-show="editing">
+                            <input type="text" ng-model="character.name">
+                        </td>
+                        <td ng-show="editing">
+                            <select ng-model="character.kingdom">
+                                <option value="Candy Kingdom">Candy Kingdom</option>
+                                <option value="Fire Kingdom">Fire Kingdom</option>
+                                <option value="Ice Kingdom">Ice Kingdom</option>
+                                <option value="Lumpy Space">Lumpy Space</option>
+                            </select>
+                        </td>
+                        <td><button ng-click="editing=true">Edit</button></td>
+                        <td><button ng-click="updateCandyPerson(character); editing=false">Save</button></td>
+                        <td ng-hide="editing"><button ng-click="sendtoCandyKingdom(character)">Send to Land of Ooo</button></td>
+                        <td ng-hide="editing"><button ng-click="bootFromCandyKingdom(character)">Boot From Ooo!</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="FireKingdom">
+                <table>
+                    <tr data-ng-repeat="(key, character) in fkcitizen">
+                        <td>{{character.name}}</td>
+                        <td>{{character.kingdom}}</td>
+                        <td ng-show="editing">
+                            <input type="text" ng-model="character.name">
+                        </td>
+                        <td ng-show="editing">
+                            <select ng-model="character.kingdom">
+                                <option value="Candy Kingdom">Candy Kingdom</option>
+                                <option value="Fire Kingdom">Fire Kingdom</option>
+                                <option value="Ice Kingdom">Ice Kingdom</option>
+                                <option value="Lumpy Space">Lumpy Space</option>
+                            </select>
+                        </td>
+                        <td><button ng-click="editing=true">Edit</button></td>
+                        <td><button ng-click="updateCharacter(character); editing=false">Save</button></td>
+                        <td ng-hide="editing"><button ng-click="sendtoFireKingdom(character)">Send to Land of Ooo</button></td>
+                        <td ng-hide="editing"><button ng-click="bootFromFireKingdom(character)">Boot From Ooo!</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="IceKingdom">
+                <table>
+                    <tr data-ng-repeat="(key, character) in ikcitizen">
+                        <td>{{character.name}}</td>
+                        <td>{{character.kingdom}}</td>
+                        <td ng-show="editing">
+                            <input type="text" ng-model="character.name">
+                        </td>
+                        <td ng-show="editing">
+                            <select ng-model="character.kingdom">
+                                <option value="Candy Kingdom">Candy Kingdom</option>
+                                <option value="Fire Kingdom">Fire Kingdom</option>
+                                <option value="Ice Kingdom">Ice Kingdom</option>
+                                <option value="Lumpy Space">Lumpy Space</option>
+                            </select>
+                        </td>
+                        <td><button ng-click="editing=true">Edit</button></td>
+                        <td><button ng-click="updateCharacter(character); editing=false">Save</button></td>
+                        <td ng-hide="editing"><button ng-click="sendtoIceKingdom(character)">Send to Land of Ooo</button></td>
+                        <td ng-hide="editing"><button ng-click="bootFromIceKingdom(character)">Boot From Ooo!</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="LumpySpace">
+                <table>
+                    <tr data-ng-repeat="(key, character) in lscitizen">
+                        <td>{{character.name}}</td>
+                        <td>{{character.kingdom}}</td>
+                        <td ng-show="editing">
+                            <input type="text" ng-model="character.name">
+                        </td>
+                        <td ng-show="editing">
+                            <select ng-model="character.kingdom">
+                                <option value="Candy Kingdom">Candy Kingdom</option>
+                                <option value="Fire Kingdom">Fire Kingdom</option>
+                                <option value="Ice Kingdom">Ice Kingdom</option>
+                                <option value="Lumpy Space">Lumpy Space</option>
+                            </select>
+                        </td>
+                        <td><button ng-click="editing=true">Edit</button></td>
+                        <td><button ng-click="updateCharacter(character); editing=false">Save</button></td>
+                        <td ng-hide="editing"><button ng-click="sendtoLumpySpace(character)">Send to Land of Ooo</button></td>
+                        <td ng-hide="editing"><button ng-click="bootFromLumpySpace(character)">Boot From Ooo!</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        </div>
+    <script src="Scripts/angular.js"></script>
+    <script src="JavaScript.js"></script>
+</body>
+</html>

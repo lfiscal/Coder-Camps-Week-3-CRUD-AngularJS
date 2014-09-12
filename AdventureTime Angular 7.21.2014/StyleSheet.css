@@ -1,0 +1,79 @@
+﻿body {
+    background-image:url("http://i.imgur.com/2oHcKaS.jpg");
+     background-size: 1300px 700px;
+     background-repeat: no-repeat;
+}
+input {
+border-radius: 5px;
+text-align: center;
+height:20px;
+}
+button {
+border-radius: 5px;
+background-color:#199aef;
+color: white;
+font-family:Verdana;
+text-align: center;
+font-weight:700;
+font-size: 10px;
+}
+#addingstuff {
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+}
+#CandyKingdom {
+width:565px;
+height:275px;
+background-color:#cb158f;
+float:left;
+border-radius:20px;
+background-image:url("http://img4.wikia.nocookie.net/__cb20120827084005/adventuretimewithfinnandjake/images/0/0b/P_027.png");
+background-size: 565px 275px;
+background-repeat: no-repeat;
+}
+#FireKingdom {
+width:565px;
+height:275px;
+background-color:#c80b0b;
+float: right;
+border-radius:20px;
+background-image:url("http://static.comicvine.com/uploads/original/14/144196/2858449-fire_kingdom.jpg");
+background-size: 565px 275px;
+background-repeat: no-repeat;
+}
+#IceKingdom {
+width:565px;
+height:275px;
+background-color:#66c5fc;
+float:left;
+border-radius:20px;
+background-image:url("http://img1.wikia.nocookie.net/__cb20110120071524/adventuretimewithfinnandjake/images/7/7e/Ice_Kingdom.png");
+background-size: 565px 275px;
+background-repeat: no-repeat;
+}
+#LumpySpace {
+width:565px;
+height:275px;
+background-color:#d18fff;
+float: right;
+border-radius:20px;
+background-image:url("http://img4.wikia.nocookie.net/__cb20091208023037/adventuretimewithfinnandjake/images/f/f0/Trouble_in_Lumpy_Space.png");
+background-size: 565px 275px;
+background-repeat: no-repeat;
+}
+table {
+float:right;
+width:565px;
+/*height:275px;*/
+ border-spacing: 10px;
+ background-color: white;
+ opacity: .75;
+ font-family:Verdana;
+ font-size: 10px;
+ /*border-radius: 5px;*/
+ font-weight:700;
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+
+}
